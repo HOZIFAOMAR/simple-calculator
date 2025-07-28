@@ -20,7 +20,7 @@
 using namespace std;
 using namespace chrono;
 
-// دالة عرض "Loading" في نفس المكان مع رسالة بعدين
+
 void loadingAnimation(int repeatCount = 6) {
     string title = "Welcome to the C++ Calculator";
     cout << "\n\n\t\t";
@@ -36,20 +36,20 @@ void loadingAnimation(int repeatCount = 6) {
         this_thread::sleep_for(milliseconds(400));
     }
 
-    // بعد ما يخلص اللودينج
+
     cout << "\r\t\tMay the peace, blessings, and mercy of God be upon you";
     this_thread::sleep_for(milliseconds(2000));  // يفضل ظاهر ثانيتين
     system("cls");
 }
 
-// عرض الإطار العلوي والواجهة
+
 void printHeader() {
     cout << "\n\n\t\t+----------------------------+\n";
     cout << "\t\t|     Simple Calculator      |\n";
     cout << "\t\t+----------------------------+\n\n";
 }
 
-// دالة الحاسبة
+
 void calculator() {
     double num1, num2;
     char op;
@@ -87,7 +87,7 @@ void calculator() {
     }
 }
 
-// البرنامج الرئيسي
+
 int main() {
     loadingAnimation(20); // عدد مرات تكرار اللودينج
     calculator();
